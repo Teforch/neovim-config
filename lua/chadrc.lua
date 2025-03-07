@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "bearded-arc",
+  theme = "onedark",
   transparency = true,
   statusline = {
     theme = "vscode_colored",
@@ -43,6 +43,13 @@ M.base46 = {
   -- 	Comment = { italic = true },
   -- 	["@comment"] = { italic = true },
   -- },
+}
+M.ui = {
+  tabufline = {
+    enabled = true,
+    lazyload = false,
+    show_git_status = true, -- показывает статус Git на вкладках
+  },
 }
 
 return M

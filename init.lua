@@ -35,3 +35,8 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.filetype.add { extension = { ejs = "ejs" } }
+vim.treesitter.language.register("html", "ejs")
+vim.treesitter.language.register("javascript", "ejs")
+vim.treesitter.language.register("embedded_template", "ejs")
