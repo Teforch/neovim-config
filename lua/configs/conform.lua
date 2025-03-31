@@ -7,6 +7,7 @@ local options = {
     typescript = { "prettier" },
     typescriptreact = { "prettier" },
     javascriptreact = { "prettier" },
+    cpp = { "clang-format" },
   },
 
   format_on_save = {
@@ -15,6 +16,5 @@ local options = {
     lsp_fallback = true,
   },
 }
-
 
 return options
